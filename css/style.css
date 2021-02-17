@@ -34,6 +34,8 @@ body{
 
 .standard-text{
   display: inline-block;
+  line-height: 25px;
+  font-size: 14px;
 }
 
 a{
@@ -55,6 +57,29 @@ a{
   color: #FE775A;
 }
 
+.bg-white{
+  background-color: white;
+}
+
+.bg-grey{
+  background-color: #F4F9FD;
+}
+
+.box-shw{
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.txt-left{
+  text-align: left;
+}
+
+.txt-center{
+  text-align: center;
+}
+
+.txt-right{
+  text-align: right;
+}
 /* FINE COMMON */
 
 
@@ -68,7 +93,6 @@ a{
 
 /* Nav Top */
 .nav-top{
-  background-color: #F5F8FA;
   padding: 30px 0;
 }
 
@@ -89,9 +113,6 @@ nav .btn{
 }
 
 /* Nav Bottom */
-.nav-bottom{
-  background-color: white;
-}
 
 .nav-bottom img{
   width: 110px;
@@ -121,17 +142,16 @@ nav .btn{
   position: relative;
 }
 
-.img-obj-fit{
-    object-fit: fill;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-  }
-
+.obj-fit{
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
 
 .teaser{
   padding-top: 100px;
-  width: 65%;
+  width: 61%;
   position: relative;
 }
 
@@ -141,14 +161,95 @@ h1{
 
 .teaser p{
   margin: 30px 0;
-  line-height: 30px;
 }
-
-
-
-
-
-
-
 /* FINE JUMBOTRON */
 /* --FINE HEADER-- */
+
+/* MAIN */
+/* Features */
+.features{
+  text-align: center;
+  padding: 40px 0;
+}
+
+.features img{
+  margin: 0 auto;
+  width: 300px;
+}
+
+.features h2{
+  margin: 10px 0 30px 0;
+}
+
+.wide-card{
+  margin: 40px 0 45px 0;
+  padding: 60px;
+  border-radius: 5px;
+}
+
+.wide-card .image{
+  width: 30%;
+}
+
+.wide-card .image img{
+  width: 55%;
+  margin-bottom: 30px;
+}
+
+.wide-card .description{
+  text-align: left;
+  width: 70%;
+}
+
+.wide-card h3{
+  margin-bottom: 30px;
+}
+
+.wide-card p{
+  width: 95%;
+}
+
+.features h4{
+  display: inline-block;
+  margin: 30px 0;
+}
+
+.line{
+  background: grey;
+  height: 2px;
+  position: relative;
+  bottom: 40px;
+  margin-left: 225px;
+  width: 58%;
+}
+
+.card-container>*{
+  width: calc(100% / 3 - 30px);
+}
+
+.card{
+  padding: 20px 20px;
+  border-radius: 5px;
+}
+
+.card img{
+  width: 45%;
+}
+
+.card:nth-child(2){
+  margin: 0 45px;
+}
+
+.feature-info{
+  height: 200px;
+}
+
+.feature-info h3{
+  margin: 20px 0;
+}
+
+.card ul{
+  list-style-type: none;
+  margin-bottom: 50px;
+}
+/* FINE MAIN */
