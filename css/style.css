@@ -1,0 +1,20 @@
+/* RESET */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+  display: block;
+  width: 100%;
+}
+/* FINE RESET */
+
+/* COMMON */
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* FINE COMMON */
