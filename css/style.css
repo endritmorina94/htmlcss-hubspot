@@ -15,6 +15,101 @@ img{
 
 body{
   font-family: 'Montserrat', sans-serif;
+  color: #33475B;
+}
+
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col{
+  float: left;
+}
+
+.container{
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.standard-text{
+  display: inline-block;
+}
+
+a{
+  text-decoration: none;
+  color: #33475B;
+}
+
+.btn{
+  color: white;
+  background-color: #FE775A;
+  border: 1px solid #FE775A;
+  padding: 10px 23px;
+  border-radius: 5px;
+}
+
+.empty{
+  background-color: transparent;
+  color: #FE775A;
 }
 
 /* FINE COMMON */
+
+
+
+/* --HEADER-- */
+
+/* NAVIGATOR */
+
+.col.right{
+  text-align: right;
+}
+
+/* Nav Top */
+.nav-top{
+  background-color: #F5F8FA;
+  padding: 30px 0;
+}
+
+nav .col{
+  width: 50%;
+}
+
+.col.right .btn{
+  padding: 10px 10px;
+}
+
+.col.right .empty{
+  margin: 0 25px;
+}
+
+/* Nav Bottom */
+.nav-bottom{
+  background-color: white;
+}
+
+.nav-bottom img{
+  width: 110px;
+  height: auto;
+}
+
+.nav-bottom .col.left{
+  /* SCHIFEZZA DA CORREGGERE! */
+  margin: 24px 0;
+}
+
+.menu{
+  list-style-type: none;
+}
+
+.menu li{
+  display: inline-block;
+  line-height: 80px;
+  margin-left: 20px;
+}
+
+
+
+/* FINE HEADER */
