@@ -93,7 +93,7 @@ a{
 }
 
 hr{
-  height: 2px solid #33475B;
+  height: 2px;
   background-color: #33475B;
 }
 /* FINE COMMON */
@@ -369,4 +369,57 @@ h1{
 }
 /* Fine Hubspot's Team & Community */
 
+/* Costumers */
+.costumers-details{
+  padding-top: 35px;
+}
+
+.costumers-details .costumers{
+  width: 40%;
+}
+
+.costumers-details .costumers-logos{
+  width: 60%;
+}
+
+
+
+
+.costumers-logos .col{
+  width: 25%;
+  padding: 10px;
+
+}
+
+.costumers-logos .col img{
+  margin: auto 0;
+  width: 100%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fine Costumers */
 /* FINE MAIN */
