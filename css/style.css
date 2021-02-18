@@ -93,7 +93,6 @@ a{
 }
 
 hr{
-  height: 2px;
   background-color: #33475B;
 }
 /* FINE COMMON */
@@ -433,35 +432,31 @@ h1{
 /* FINE MAIN */
 
 /* FOOTER */
-/* Footer Top */
 footer{
   background-color: #32495B;
-  height: 500px;
   color: white;
+  padding: 40px 0 40px 0;
 }
 
-.footer-top{
-  padding: 30px 0 40px 0;
-}
-
-.footer-top .col{
+/* Footer Top */
+.vertical-lists .col{
   width: 25%;
 }
 
-.footer-top .menu li a{
+.vertical-lists .menu li a{
   color: #DADEE0;
   font-size: 12px;
 }
 
-.footer-top .col h5{
+.vertical-lists .col h5{
   margin-bottom: 20px;
 }
 
-.footer-top .menu li{
+.vertical-lists .menu li{
   margin-bottom: 15px;
 }
 
-.footer-top .menu .contact-btn{
+.vertical-lists .menu .contact-btn{
   background-color: #DADEE0;
   color: #32495B;
   padding: 10px 10px;
@@ -469,19 +464,49 @@ footer{
   display: inline-block;
 }
 
-.footer-top .menu i{
+.vertical-lists .menu i{
   font-size: 15px;
   margin-right: 20px;
 }
 
+.horizontal-list .menu li{
+  display: inline-block;
+  margin: 50px 0 15px 0;
+}
 
+.horizontal-list .menu li:not(:last-child){
+  margin-right: 25px;;
+}
 
+.horizontal-list .menu a{
+  color: #DADEE0;
+}
 
+footer hr{
+  background-color: #DADEE0;
+  opacity: 0.8;
+}
+/* Fine Footer Top */
 
+/* Footer Bottom */
+.footer-bottom{
+  margin-top: 30px;
+  color: white;
+}
 
+.footer-bottom .col{
+  width: 50%;
+}
 
+.copyright img{
+  width: 20%;
+}
 
-
-
+.legal-stuff a{
+  color: #DADEE0;
+  margin-left: 20px;
+  font-size: 12px;
+}
+/* Fine Footer Bottom */
 
 /* FINE FOOTER */
