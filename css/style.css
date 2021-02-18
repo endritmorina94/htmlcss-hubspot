@@ -302,6 +302,12 @@ h1{
   padding-right: 14px;
   vertical-align: middle;
 }
+
+.wide-card:hover,
+.card:hover{
+  transform: scale(1.01);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
 /* Fine Features */
 
 /* FINE MAIN */
