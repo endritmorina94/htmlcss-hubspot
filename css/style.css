@@ -38,9 +38,14 @@ body{
   font-size: 14px;
 }
 
+.thin-text{
+  font-size: 12px;
+}
+
 a{
   text-decoration: none;
   color: #33475B;
+  font-size: 14px;
 }
 
 .btn{
@@ -80,17 +85,36 @@ a{
 .txt-right{
   text-align: right;
 }
-/* FINE COMMON */
 
+.menu{
+  list-style-type: none;
+}
+
+hr{
+  height: 2px solid #33475B;
+  background-color: #33475B;
+}
+/* FINE COMMON */
 
 
 /* --HEADER-- */
 
 /* NAVIGATOR */
-.col.right{
-  text-align: right;
+.col.left p::after,
+.nav-bottom .menu li:not(:nth-child(2))::after{
+  font-family: "Font Awesome 5 Free";
+  content: "\f078";
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+  font-weight: 800;
 }
 
+.col.left a{
+  border-left: 2px solid #33475B;
+  margin-left: 15px;
+  padding-left: 15px;
+}
 /* Nav Top */
 .nav-top{
   padding: 30px 0;
@@ -112,23 +136,28 @@ nav .btn{
   margin: 0 25px;
 }
 
+.fa-search{
+  color: #00A4BD;
+  cursor: pointer;
+}
+
 /* Nav Bottom */
 
 .nav-bottom img{
   width: 110px;
-  height: auto;
 }
 
 .nav-bottom .col.left{
   /* SCHIFEZZA DA CORREGGERE! */
-  margin: 24px 0;
+  margin: 24.5px 0;
+  width: 40%
 }
 
-.menu{
-  list-style-type: none;
+.nav-bottom .col.right{
+  width: 60%;
 }
 
-.menu li{
+.nav-bottom .menu li{
   display: inline-block;
   line-height: 80px;
   margin-left: 20px;
@@ -181,8 +210,12 @@ h1{
   margin: 10px 0 30px 0;
 }
 
+.features .thin{
+  width: 80%;
+}
+
 .wide-card{
-  margin: 40px 0 45px 0;
+  margin: 40px 0 35px 0;
   padding: 60px;
   border-radius: 5px;
 }
@@ -215,16 +248,19 @@ h1{
 }
 
 .line{
-  background: grey;
-  height: 2px;
   position: relative;
   bottom: 40px;
   margin-left: 225px;
   width: 58%;
 }
 
+.wide-card .menu li{
+  display: inline-block;
+  margin-right: 25px;
+}
+
 .card-container>*{
-  width: calc(100% / 3 - 30px);
+  width: 318px;
 }
 
 .card{
@@ -233,11 +269,12 @@ h1{
 }
 
 .card img{
-  width: 45%;
+  width: auto;
+  height: 130px;
 }
 
 .card:nth-child(2){
-  margin: 0 45px;
+  margin: 0 35px;
 }
 
 .feature-info{
@@ -249,7 +286,22 @@ h1{
 }
 
 .card ul{
-  list-style-type: none;
   margin-bottom: 50px;
 }
+
+.features li{
+  vertical-align: middle;
+}
+
+.features li:before {
+  content: "";
+  background: url("../img/orange_check.svg") no-repeat;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  padding-right: 14px;
+  vertical-align: middle;
+}
+/* Fine Features */
+
 /* FINE MAIN */
