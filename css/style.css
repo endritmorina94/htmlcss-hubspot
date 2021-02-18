@@ -14,6 +14,7 @@ img{
 /* COMMON */
 body{
   font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
   color: #33475B;
 }
 
@@ -40,6 +41,7 @@ body{
 
 .thin-text{
   font-size: 12px;
+  line-height: 25px;
 }
 
 a{
@@ -309,5 +311,62 @@ h1{
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 /* Fine Features */
+
+/* Hubspot's Team & Community */
+.bg-gradient{
+  color: white;
+  background: rgb(0,166,187);
+  background: linear-gradient(90deg, rgba(0,166,187,1) 2%, rgba(0,186,169,1) 100%);
+}
+
+.community-int{
+  padding-top: 40px;
+}
+
+.community-int h2{
+  width: 86%;
+  margin: 0 auto;
+}
+
+.community-int p{
+  margin: 20px auto 40px auto;
+}
+
+.grid .col{
+  width: 25%;
+  padding: 15px 40px;
+}
+
+.grid .col:not(:last-child){
+  border-right: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.grid.first{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.grid .col img{
+  width: auto;
+  height: 37px;
+  margin: 0 auto;
+}
+
+.big-numbers{
+  font-size: 35px;
+  margin: 15px 0 5px 0;
+}
+
+.big-numbers span{
+  font-weight: 400;
+  font-size: 25px;
+  position: relative;
+  bottom: 2.5px;
+  left: 2px;
+}
+
+.numbers-container{
+  padding-bottom: 80px;
+}
+/* Fine Hubspot's Team & Community */
 
 /* FINE MAIN */
