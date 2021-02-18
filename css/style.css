@@ -50,6 +50,11 @@ a{
   font-size: 14px;
 }
 
+a:hover:not(.btn, .contact-btn ){
+  color: #0091AE;
+  text-decoration: underline;
+}
+
 .btn{
   display: inline-block;
   color: white;
@@ -57,6 +62,10 @@ a{
   border: 1px solid #FE775A;
   padding: 20px 40px;
   border-radius: 5px;
+}
+
+.btn:hover{
+  opacity: 0.8;
 }
 
 .empty{
