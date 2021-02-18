@@ -50,7 +50,7 @@ a{
   font-size: 14px;
 }
 
-a:hover:not(.btn, .contact-btn ){
+a:hover:not(.btn, .contact-btn){
   color: #7FD1DE;
   text-decoration: underline;
 }
@@ -128,7 +128,7 @@ a:hover:not(.btn, .contact-btn ){
 }
 /* Nav Top */
 .nav-top{
-  padding: 30px 0;
+  padding: 26px 0;
 }
 
 nav .col{
@@ -160,7 +160,7 @@ nav .btn{
 
 .nav-bottom .col.left{
   /* SCHIFEZZA DA CORREGGERE! */
-  margin: 24.5px 0;
+  margin: 24px 0;
   width: 40%
 }
 
@@ -230,6 +230,7 @@ h1{
   padding: 60px;
   border-radius: 5px;
   position: relative;
+  transition-duration: 0.4s;
 }
 
 .wide-card .image{
@@ -282,6 +283,7 @@ h1{
 .card{
   padding: 20px 20px;
   border-radius: 5px;
+  transition-duration: 0.4s;
 }
 
 .card img{
@@ -339,7 +341,7 @@ h1{
 }
 
 .community-int{
-  padding-top: 40px;
+  padding-top: 50px;
 }
 
 .community-int h2{
@@ -527,6 +529,7 @@ footer hr{
 
 .copyright img{
   width: 20%;
+  margin-bottom: 5px;
 }
 
 .legal-stuff a{
