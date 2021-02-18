@@ -51,7 +51,7 @@ a{
 }
 
 a:hover:not(.btn, .contact-btn ){
-  color: #0091AE;
+  color: #7FD1DE;
   text-decoration: underline;
 }
 
@@ -71,6 +71,10 @@ a:hover:not(.btn, .contact-btn ){
 .empty{
   background-color: transparent;
   color: #FE775A;
+}
+
+.empty:hover{
+  background-color: rgba(254, 119, 90, 0.1);
 }
 
 .bg-white{
@@ -220,7 +224,7 @@ h1{
   margin: 10px 0 20px 0;
 }
 
-.features .tight{
+.tight{
   width: 80%;
 }
 
@@ -287,8 +291,8 @@ h1{
   margin: 0 35px;
 }
 
-.feature-info{
-  height: 200px;
+.feature-info p{
+  padding-bottom: 70px;
 }
 
 .feature-info h3{
@@ -317,6 +321,11 @@ h1{
 .card:hover{
   transform: scale(1.01);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.wide-card:hover hr,
+.card:hover hr{
+  height: 1px;
 }
 /* Fine Features */
 
@@ -447,14 +456,13 @@ footer{
   padding: 40px 0 40px 0;
 }
 
+footer a{
+  color: #DADEE0;
+  font-size: 12px;
+}
 /* Footer Top */
 .vertical-lists .col{
   width: 25%;
-}
-
-.vertical-lists .menu li a{
-  color: #DADEE0;
-  font-size: 12px;
 }
 
 .vertical-lists .col h5{
@@ -473,9 +481,17 @@ footer{
   display: inline-block;
 }
 
-.vertical-lists .menu i{
+.vertical-lists .contact-btn:hover{
+  background-color: #7FD1DE;
+}
+
+.vertical-lists i{
   font-size: 15px;
   margin-right: 20px;
+}
+
+i:hover{
+  color: #7FD1DE;
 }
 
 .horizontal-list .menu li{
@@ -487,8 +503,8 @@ footer{
   margin-right: 25px;;
 }
 
-.horizontal-list .menu a{
-  color: #DADEE0;
+.horizontal-list a{
+  font-size: 14px;
 }
 
 footer hr{
