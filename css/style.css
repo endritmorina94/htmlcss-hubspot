@@ -105,9 +105,6 @@ a:hover:not(.btn, .contact-btn ){
   list-style-type: none;
 }
 
-hr{
-  background-color: #33475B;
-}
 /* FINE COMMON */
 
 
@@ -212,7 +209,7 @@ h1{
 /* Features */
 .features{
   text-align: center;
-  padding: 40px 0;
+  padding: 40px 0 50px 0;
 }
 
 .features img{
@@ -232,6 +229,7 @@ h1{
   margin: 45px 0 35px 0;
   padding: 60px;
   border-radius: 5px;
+  position: relative;
 }
 
 .wide-card .image{
@@ -261,11 +259,15 @@ h1{
   margin: 30px 0;
 }
 
-.line{
-  position: relative;
-  bottom: 40px;
-  margin-left: 225px;
-  width: 58%;
+.wide-card h4::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  height: 2px;
+  background: grey;
+  width: 39%;
+  bottom: 37%;
+  left: 54%;
 }
 
 .wide-card .menu li{
@@ -299,6 +301,10 @@ h1{
   margin: 20px 0;
 }
 
+.feature-info{
+  border-bottom: 2px solid grey;
+}
+
 .card ul{
   margin-bottom: 50px;
 }
@@ -323,10 +329,6 @@ h1{
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-.wide-card:hover hr,
-.card:hover hr{
-  height: 1px;
-}
 /* Fine Features */
 
 /* Hubspot's Team & Community */
