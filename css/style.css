@@ -370,56 +370,64 @@ h1{
 /* Fine Hubspot's Team & Community */
 
 /* Costumers */
-.costumers-details{
-  padding-top: 35px;
+.customers-details{
+  padding-top: 40px;
 }
 
-.costumers-details .costumers{
+.customers-details .customers{
   width: 40%;
 }
 
-.costumers-details .costumers-logos{
+.customers-details .customers-logos{
   width: 60%;
 }
 
+.customers{
+  padding: 0 100px;
+}
 
+.customers h4{
+  margin-bottom: 20px;
+}
 
-
-.costumers-logos .col{
-  width: 25%;
+.customers-logos .menu li{
+  display: inline-block;
+  width: 24%;
   padding: 10px;
-
 }
 
-.costumers-logos .col img{
-  margin: auto 0;
+.customers-logos .menu li img{
   width: 100%;
-
+  display: inline-block;
+  vertical-align: middle;
 }
 
+.new-customer{
+  padding-top: 30px;
+}
 
+.become-customer{
+  width: 48%;
+}
 
+.become-customer h2{
+  width: 90%;
+  margin: 30px 0;
+}
 
+.become-customer .btn{
+  margin: 35px 0;
+}
 
+.potential-new-customer-pic{
+  width: 52%;
+  margin: auto 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.potential-new-customer-pic img{
+  width: 53%;
+  float: right;
+}
 
 /* Fine Costumers */
 /* FINE MAIN */
