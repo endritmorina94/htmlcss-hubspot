@@ -51,16 +51,13 @@ a{
 }
 
 a:hover:not(.btn, .contact-btn),
-.dropwdown:hover a{
+.dropdown:hover a{
   color: #7FD1DE;
   text-decoration: underline;
 }
 
+i:hover,
 .dropdown:hover i{
-  color: #7FD1DE;
-}
-
-i:hover{
   color: #7FD1DE;
 }
 
@@ -135,7 +132,13 @@ i:hover{
 
 /* Nav Top */
 .nav-top{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 26px 0;
+  z-index: 2;
+  box-shadow: 0 1px 1px rgba(51, 71, 91, 0.1);
 }
 
 nav .col{
@@ -160,6 +163,20 @@ nav .btn{
 }
 
 /* Nav Bottom */
+.nav-bottom{
+  margin-top: 72px;
+  position: relative;
+}
+
+.hrtop{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  height: 2px;
+  background-color: #33475B;
+}
 
 .nav-bottom img{
   width: 110px;
@@ -194,7 +211,7 @@ nav .btn{
   z-index: -1;
   left: 0;
   right: 0;
-  top: 76px;
+  top: 78px;
   background: #7FD1DE;
   height: 5px;
   transform: translateY(5px);
