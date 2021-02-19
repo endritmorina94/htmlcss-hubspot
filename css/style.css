@@ -111,8 +111,10 @@ a:hover:not(.btn, .contact-btn){
 /* --HEADER-- */
 
 /* NAVIGATOR */
+
+/* Questa parte di codice fa mettere la freccia verso il basso ad alcuni link della navbar */
 .col.left p::after,
-.nav-bottom .menu li:not(:nth-child(2))::after{
+.nav-bottom .under-line::after{
   font-family: "Font Awesome 5 Free";
   content: "\f078";
   display: inline-block;
@@ -120,12 +122,8 @@ a:hover:not(.btn, .contact-btn){
   vertical-align: middle;
   font-weight: 800;
 }
+/* -------------------------------------------------- */
 
-.col.left a{
-  border-left: 2px solid #33475B;
-  margin-left: 15px;
-  padding-left: 15px;
-}
 /* Nav Top */
 .nav-top{
   padding: 26px 0;
@@ -168,15 +166,114 @@ nav .btn{
   width: 60%;
 }
 
-.nav-bottom .menu li{
+.nav-bottom .menu li:not(.dd-content li){
   display: inline-block;
   line-height: 80px;
   margin-left: 20px;
 }
+
+/* Questo codice fa uscire la barra colorata sotto i bottoni quando c'è l'hover */
+.under-line{
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+}
+
+.under-line:before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 76px;
+  background: #7FD1DE;
+  height: 5px;
+  transform: translateY(5px);
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.under-line:hover:before{
+  transform: translateY(0);
+}
+/* ---------------------------------------------------------------------------- */
+
+/* Dropdown Menus */
+.dropdown{
+  display: inline-block;
+  position: relative;
+}
+
+.dropper.lang{
+  cursor: pointer;
+  border-right: 2px solid #33475B;
+  margin-right: 15px;
+  padding-right: 15px;
+}
+
+.dd-content{
+  display: none;
+  position: absolute;
+  background-color: white;
+  z-index: -1;
+  text-align: left;
+  min-width: 200px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.dd-content li{
+  padding: 15px;
+  line-height: 15px;
+}
+
+.dropdown:hover .dd-content{
+  display: block;
+  z-index: 2;
+}
+
+.dd-content.about{
+  top: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fine Dropdown Menus */
 /* FINE NAVIGATOR */
 
 /* JUMBTRON */
-
 .jumbotron{
   height: 650px;
   position: relative;
