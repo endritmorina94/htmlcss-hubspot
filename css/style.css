@@ -50,7 +50,11 @@ a{
   font-size: 14px;
 }
 
-a:hover:not(.btn, .contact-btn),
+a:hover:not(.btn, .contact-btn){
+  color: #7FD1DE;
+  text-decoration: underline;
+}
+
 .dropdown:hover a{
   color: #7FD1DE;
   text-decoration: underline;
@@ -166,35 +170,26 @@ nav .btn{
 .nav-bottom{
   margin-top: 72px;
   position: relative;
+  line-height: 80px;
+  border-top: 2px solid #33475B;
 }
 
-.hrtop{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1;
-  height: 2px;
-  background-color: #33475B;
+.nav-bottom .col.left{
+  width: 40%;
 }
 
 .nav-bottom img{
   width: 110px;
-}
-
-.nav-bottom .col.left{
-  /* SCHIFEZZA DA CORREGGERE! */
-  margin: 24px 0;
-  width: 40%
+  vertical-align: middle;
+  display: inline-block;
 }
 
 .nav-bottom .col.right{
   width: 60%;
 }
 
-.nav-bottom .menu li:not(.dd-content li){
+.nav-bottom .menu li{
   display: inline-block;
-  line-height: 80px;
   margin-left: 20px;
 }
 
@@ -211,7 +206,7 @@ nav .btn{
   z-index: -1;
   left: 0;
   right: 0;
-  top: 78px;
+  top: 77px;
   background: #7FD1DE;
   height: 5px;
   transform: translateY(5px);
@@ -479,6 +474,7 @@ h1{
 .customers{
   padding: 40px 0 50px 0;
 }
+
 .customers-details .customers-info{
   width: 40%;
 }
@@ -533,7 +529,6 @@ h1{
   width: 53%;
   float: right;
 }
-
 /* Fine Costumers */
 /* FINE MAIN */
 
@@ -548,6 +543,7 @@ footer a{
   color: #DADEE0;
   font-size: 12px;
 }
+
 /* Footer Top */
 .vertical-lists .col{
   width: 25%;
@@ -590,16 +586,12 @@ footer a{
 .horizontal-list a{
   font-size: 14px;
 }
-
-footer hr{
-  background-color: #DADEE0;
-  opacity: 0.8;
-}
 /* Fine Footer Top */
 
 /* Footer Bottom */
 .footer-bottom{
-  margin-top: 30px;
+  border-top: 2px solid rgba(218, 222, 224, 0.7);
+  padding-top: 30px;
   color: white;
 }
 
