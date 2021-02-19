@@ -50,9 +50,18 @@ a{
   font-size: 14px;
 }
 
-a:hover:not(.btn, .contact-btn){
+a:hover:not(.btn, .contact-btn),
+.dropwdown:hover a{
   color: #7FD1DE;
   text-decoration: underline;
+}
+
+.dropdown:hover i{
+  color: #7FD1DE;
+}
+
+i:hover{
+  color: #7FD1DE;
 }
 
 .btn{
@@ -113,8 +122,8 @@ a:hover:not(.btn, .contact-btn){
 /* NAVIGATOR */
 
 /* Questa parte di codice fa mettere la freccia verso il basso ad alcuni link della navbar */
-.col.left p::after,
-.nav-bottom .under-line::after{
+.col.left .dropper::after,
+.nav-bottom .under-line a::after{
   font-family: "Font Awesome 5 Free";
   content: "\f078";
   display: inline-block;
@@ -198,13 +207,14 @@ nav .btn{
 }
 /* ---------------------------------------------------------------------------- */
 
-/* Dropdown Menus */
+/* Dropdown Menu */
 .dropdown{
   display: inline-block;
   position: relative;
+  z-index: 1;
 }
 
-.dropper.lang{
+.dropper{
   cursor: pointer;
   border-right: 2px solid #33475B;
   margin-right: 15px;
@@ -215,7 +225,7 @@ nav .btn{
   display: none;
   position: absolute;
   background-color: white;
-  z-index: -1;
+  z-index: 1;
   text-align: left;
   min-width: 200px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
@@ -228,49 +238,9 @@ nav .btn{
 
 .dropdown:hover .dd-content{
   display: block;
-  z-index: 2;
 }
 
-.dd-content.about{
-  top: 60px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Fine Dropdown Menus */
+/* Fine Dropdown Menu */
 /* FINE NAVIGATOR */
 
 /* JUMBTRON */
@@ -589,10 +559,6 @@ footer a{
 .vertical-lists i{
   font-size: 15px;
   margin-right: 20px;
-}
-
-i:hover{
-  color: #7FD1DE;
 }
 
 .horizontal-list .menu li{
